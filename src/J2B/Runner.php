@@ -8,7 +8,7 @@ class Runner
     {
         if ('FE' === TL_MODE) {
             foreach($GLOBALS['TL_JAVASCRIPT'] as $index => $javascript) {
-                $javascript = preg_replace('/\|static/', '', $javascript);
+                $javascript = preg_replace('/\|.*/', '', $javascript);
 
                 $GLOBALS['TL_BODY'][] = '<script type="text/javascript" src="' . $javascript . '"></script>';
 
