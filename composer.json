@@ -21,8 +21,8 @@
   },
   "require":{
     "php":">=5.4",
-    "contao/core":">=3.2,<5.0-dev",
-    "contao-community-alliance/composer-plugin": "~2.0"
+    "contao/core-bundle":"^3.2 || ^4.1",
+    "contao-community-alliance/composer-plugin":"^2.4.0 || 3.*"
   },
   "autoload": {
     "psr-4": {
