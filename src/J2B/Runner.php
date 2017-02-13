@@ -2,9 +2,13 @@
 
 namespace Oneup\Contao\J2B;
 
+use Contao\PageModel;
+use Contao\LayoutModel;
+use Contao\PageRegular;
+
 class Runner
 {
-    public function moveJs(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
+    public function moveJs(PageModel $objPage, LayoutModel $objLayout, PageRegular $objPageRegular)
     {
         if ('FE' === TL_MODE) {
             foreach($GLOBALS['TL_JAVASCRIPT'] as $index => $javascript) {
