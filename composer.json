@@ -22,14 +22,8 @@
   "require":{
     "php":">=5.4",
     "contao/core-bundle":"^3.2 || ^4.1",
-    "contao-community-alliance/composer-plugin":"^2.4.0 || 3.*"
+    "contao-community-alliance/composer-plugin":"~2.4 | ~3.0"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/aschempp/composer-plugin"
-    }
-  ],
   "autoload": {
     "psr-4": {
       "Oneup\\Contao\\": "src"
