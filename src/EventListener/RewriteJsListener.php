@@ -1,14 +1,14 @@
 <?php
 
-namespace Oneup\Contao\J2B;
+namespace Oneup\Contao\J2BBundle\EventListener;
 
 use Contao\PageModel;
 use Contao\LayoutModel;
 use Contao\PageRegular;
 
-class Runner
+class RewriteJsListener
 {
-    public function moveJs(PageModel $objPage, LayoutModel $objLayout, PageRegular $objPageRegular)
+    public function onPageGenerate(PageModel $objPage, LayoutModel $objLayout, PageRegular $objPageRegular): void
     {
         if ('FE' === TL_MODE) {
             foreach($GLOBALS['TL_JAVASCRIPT'] as $index => $javascript) {
